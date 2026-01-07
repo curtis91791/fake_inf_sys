@@ -18,50 +18,63 @@
         </div>
         <hr style="border: 0; height: 5px; background-color: rgb(0, 0, 0); margin:20px 0 0 0;opacity: 1;">
 
-
 		<div align=right id=form_head style="DISPLAY:">
 		
-			<font color="#EF5F61" size="-1">[我的學號/職號&nbsp;&nbsp;000011]_91</font><br>
+			<font color="#EF5F61" size="-1">[個人基本資料&nbsp;&nbsp;001400]_91</font><br>
 			
 		<input name="button" type="button" onClick="history.go( -1 );return true;" value=" 上一頁 " style="BACKGROUND-COLOR: #337AB7; COLOR: #ffffff; HEIGHT: 20px;font-size: 10pt">	  							    
 		<input name="button" type="button" onClick="history.go( +1 );return true;" value=" 下一頁 " style="BACKGROUND-COLOR: #337AB7; COLOR: #ffffff; HEIGHT: 20px;font-size: 10pt">	  							    
 		</div>
 	
 
+
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta http-equiv="Content-Type" content="text/html; charset=utf8">
-        <meta http-equiv='cache-control' content='no-cache, no-store, must-revalidate'>
-        <meta http-equiv='expires' content='0'>
-        <meta http-equiv='pragma' content='no-cache'>
-        <meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-        <script LANGUAGE="Javascript" SRC="../js/wap_headchk.js"></script>
         <title>義守大學-應用資訊系統</title>
+
+        <script LANGUAGE="JavaScript" SRC="../js/wap_headchk_utf8.js"></script>
 
         <style>
            A  {text-decoration: none;}
         </style>
 
-
-
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
-        <!-- Optional JavaScript; choose one of the two! -->
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
+        <script language ="javascript">
+            <!--
+            function upd_ename()
+            {
+            	if (document.wap_001400.ename.value=="")
+              	{
+               		alert("請輸入英文姓名。");
+               		document.wap_001400.ename.focus();
+                    	return (false);
+               	}else{
+            		usr_return = confirm("英文姓名確定儲存後，若要變更需至註冊組申請，是否確定儲存 !!")
+            	    if (usr_return == true)
+            		{
+            	    	document.wap_001400.action="wap_001400_upd.asp" ;
+            			document.wap_001400.submit();
+               			return (true);
+               		}else{
+            			return (false);
+            		}
+            	}
+            }
+            //-->
+        </script>
 
     </head>
     <body>
-
-
         <style>
         #menuButton { /* 按鈕 */
             position: fixed; /* 固定定位 */
@@ -422,7 +435,7 @@
                     <td style="font-size: 12pt;" class="border border-1 border-white text-start text-nowrap pb-1" bgcolor="#0080c2" onclick="$('#TOP_wap_00wap_001400asp')[0].click();return;">
                         
 
-                            <a href="profile.html"  id="TOP_wap_00wap_001400asp">
+                            <a href="profile.html" id="TOP_wap_00wap_001400asp">
                                 <font color="ffffff">個人基本資料</font>
                             </a>
                         
@@ -808,7 +821,7 @@
                         
                             <div class="fw-bold">＞
                                 
-                                    <a class="mx-3 my-2 link-danger" href="index.html">
+                                    <a class="mx-3 my-2 link-danger" href="index.html" >
                                         我的學號/職號
                                     </a>
                                 
@@ -1772,100 +1785,305 @@
 
 
         </script>
-<!-- ================================================ -->
 
-
-
-
-
-    <script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagNa</script>
-
-
-<!DOCTYPE html>
-<html lang="zh-Hant">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-8 col-lg-6 mb-2">
-                <img border="0" src="isulogo.jpg" class="w-100">
-            </div>
-            <div class="col-12 col-sm-12 text-center ">
-            </div>
-            <div class="col-12 col-sm-12 w-100">
+                <!-- <img border="0" src="../images/isulogo.jpg" width="617" height="56"> -->
                 
-                <div class="row row-cols-1 row-cols-sm-3 row-cols-md-3 row-cols-lg-4 g-1">
-                    <div class="col ">
-                        <div class="card border-primary h-100">
-                            <div class="card-header text-primary text-center fw-bold h5">
-                                
-                                學號 Student ID
-                                
+                        <div class="row my-5 h3">
+                            <div class="col-12 col-sm-12 px-3 text-center d-flex justify-content-center">
+                                <div class="w-75">
+
+                                    <form name="wap_001400" action="" method="post">
+                                        <input type="hidden" name="st_no" id="st_no" value='11001802A'>
+
+                                        <label for="ename" class="form-label bg-primary text-light ">英文姓名輸入：</label>
+                                        <input type="text" class="form-control text-center" id="ename" name="ename" tabIndex="1" style="font-size: 16pt; color: #000080; font-weight: bold; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px; background-color: #E0E0E0">
+
+                                        <input type="submit" class="py-1 m-1 btn btn-lg btn-outline-danger" id="submit" name="submit" value="確認儲存" onclick="upd_ename();">
+
+                                    </form>
+
+                                </div>
+
                             </div>
+                            <div class="col-auto text-danger fw-bold text-start px-3">
+                                <div class="my-3">
+                                    1.英文姓名為英文學位證明書使用，請務必與護照完全相符，若無，請至
+                                    <a href="https://www.boca.gov.tw/sp-natr-singleform-1.html" title="外交部外文姓名中譯英系統" target="_blank" style="color:#0d6efd;">
+                                    外交部外文姓名中譯英系統</a>
+                                    查詢。
 
-                            <img src='https://ap1.isu.edu.tw/barcode/?msg=11001802A&&fmt=png' class="card-img-top px-3 py-3 " >
+                                </div>
+                                <div class="my-3">
+                                    2.未於當年度 5月15日前填寫英文姓名之應屆畢業生，日後申請核發英文學位證明書，須繳納申請費用。
 
-                            <div class="card-body text-center h3">
-                                <p class="card-text">
-                                    11001802A
-                                </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card border-primary h-100">
-                            <div class="card-header text-primary text-center fw-bold h5">
-                                姓名 Name
-                            </div>
 
-                            <div class="card-body text-center h3">
-                                <p class="card-text">
-                                    陳政瑋
+                        <HR class="mb-5"  color="#EF5F61" >
+                    
 
-                                </p>
+                    <div class="row mb-2">
+                        <h2 class="fw-bold" style="color:#000080;" >學生基本資料 Student Info</h2>
+
+
+                        <div class="col-auto col-lg-6 shadow-sm">
+                            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                <div class="col p-4 d-flex flex-column position-static ">
+
+                                    <div class="row mb-1 border-bottom d-flex align-items-center">
+                                        <span class="col-4 text-end py-2 ">
+                                            學號
+                                            <BR>
+                                            Student ID
+                                        </span>
+                                        <span class="col-8 h5 fw-bold py-2 ">
+                                            11001802A
+                                        </span>
+                                    </div>
+
+                                    <div class="row mb-1 border-bottom d-flex align-items-center">
+                                        <span class="col-4 text-end py-2">
+                                            姓名
+                                            <BR>
+                                            Name
+                                        </span>
+                                        <span class="col-8 h5 fw-bold py-2">
+
+                                            陳政瑋<BR>
+                                            &nbsp;
+                                            <BR>
+                                        </span>
+                                    </div>
+
+                                    <div class="row mb-1 border-bottom d-flex align-items-center">
+                                        <span class="col-4 text-end py-2">
+                                            出生日期
+                                            <BR>
+                                            Date of Birth
+                                        </span>
+                                        <span class="col-8 h5 fw-bold py-2">
+                                            2003-08-23
+                                                <!-- 92-08-23 -->
+                                            
+                                        </span>
+                                    </div>
+
+
+                                    <div class="row mb-1 border-bottom d-flex align-items-center">
+                                        <span class="col-4 text-end py-2">
+                                            手機
+                                            <BR>
+                                            Mobile
+                                        </span>
+                                        <span class="col-8 h5 fw-bold py-2">
+                                            0932375770          
+                                        </span>
+                                    </div>
+
+
+                                    <div class="row mb-1 border-bottom d-flex align-items-center">
+                                        <span class="col-4 text-end py-2">
+                                            連絡電話
+                                            <BR>
+                                            Phone No.
+                                        </span>
+                                        <span class="col-8 h5 fw-bold py-2">
+                                            03-7544850
+                                        </span>
+                                    </div>
+
+
+                                    <div class="row mb-1 border-bottom d-flex align-items-center">
+                                        <span class="col-4 text-end py-2">
+                                            英文姓名
+                                            <BR>
+                                            Name in English
+                                        </span>
+                                        <span class="col-8 h5 fw-bold py-2">
+                                            
+                                        </span>
+                                        <p class="text-danger fw-bold">
+                                            
+                                        </p>
+                                    </div>
+
+
+
+
+                                </div>
+
+                                <div class="col-12 col-sm-auto d-block">
+                                    <div class="mb-1 border-bottom">
+                                        
+                                            <img border="0" src="face.jpg" width="200" height="250">
+                                        
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card border-primary h-100">
-                            <div class="card-header text-primary text-center fw-bold h5">
-                                
-                                系所 Department
-                                
-                            </div>
 
-                            <div class="card-body text-center h3">
-                                <p class="card-text ">
-                                    
-                                        <div class="my-1">
-                                            智慧科技學院<BR>
+
+
+
+                        <div class="col-auto col-lg-6 shadow-sm">
+                            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                <div class="col p-4 d-flex flex-column position-static">
+
+                                    <div class="row mb-1 border-bottom d-flex align-items-center">
+                                        <span class="col-5 text-end py-2">
+                                            監護人手機
+                                            <BR>
+                                            Custodian's Mobile
+                                        </span>
+                                        <span class="col-7 h5 fw-bold py-2">
+                                            0933351500
+                                        </span>
+                                    </div>
+
+                                    <div class="row mb-1 border-bottom d-flex align-items-center">
+                                        <span class="col-5 text-end py-2">
+                                            監護人姓名
+                                            <BR>
+                                            Name of Custodian
+                                        </span>
+                                        <span class="col-7 h5 fw-bold py-2">
+                                            王資斐
+                                        </span>
+                                    </div>
+
+                                    <div class="row mb-1 border-bottom d-flex align-items-center">
+                                        <span class="col-5 text-end py-2">
+                                            永久地址
+                                            <BR>
+                                            Houserhold Registration Address
+                                        </span>
+                                        <span class="col-7 h5 fw-bold py-2">
+                                            苗栗縣造橋鄉造橋村11鄰過港坪49號
+
+                                        </span>
+                                    </div>
+
+                                    <div class="row mb-1 border-bottom d-flex align-items-center">
+                                        <span class="col-5 text-end py-2">
+                                            通訊地址
+                                            <BR>
+                                            Mailing Address
+                                        </span>
+                                        <span class="col-7 h5 fw-bold py-2">
+                                            苗栗縣造橋鄉造橋村11鄰過港坪49號
+                                        </span>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <p class="">
+                        <div class="ms-3 h4 fw-bold text-start text-danger">
+                            <span class="ms-4"></span>上述資料若有錯誤，請至註冊組修正，以免漏失相關重要通知。
+                        </div>
+                        <div class="ms-3 h4 fw-bold text-start text-danger">
+                            <span class="ms-4"></span>Please contact the Registration Section if any information provided above needs to be corrected, in order to avoid missing important information.
+                        </div>
+
+                    </p>
+
+                    
+
+                    <div class="row mb-2">
+
+                        <div class="col-auto col-lg-6 shadow-sm">
+                            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                <div class="col p-4 d-flex flex-column position-static">
+
+                                    <div class="row mb-1 border-bottom d-flex align-items-center">
+                                        <span class="col-3 text-end py-2">
+                                            學院
+                                            <BR>
+                                            College
+                                        </span>
+                                        <span class="col-9 h5 fw-bold py-2">
+                                            智慧科技學院
+                                            <BR>
                                             College of Intelligent Science and Technology
-                                        </div>
-                                        <div class="my-1">
-                                            電機工程學系<BR>
+                                        </span>
+                                    </div>
+
+                                    <div class="row mb-1 border-bottom d-flex align-items-center">
+                                        <span class="col-3 text-end py-2">
+                                            系所
+                                            <BR>
+                                            Department
+                                        </span>
+                                        <span class="col-9 h5 fw-bold py-2">
+                                            電機工程學系
+                                            <BR>
                                             Department of Electrical Engineering
-                                        </div>
-                                        <div class="my-1">
-                                            電機五<BR>
-                                            A EE 5
-                                        </div>
-                        			
-                                </p>
+                                        </span>
+                                    </div>
+
+
+                                </div>
+
                             </div>
                         </div>
+
+
                     </div>
+
+                    
+
+            <hr style="height:2px ;"  color="#EF5F61" >
+            
+                <div class="table-responsive">
+                    <table class="table table-bordered border-dark align-middle " >
+                        <caption align="Center" ><font SIZE="+1"  COLOR="#000080"><b>義守大學學生個人資料告知聲明書&nbsp;Statement on Collection, Processing and Use of Personal Information</b></font></caption>
+                        <tr class="bg-primary text-light text-center fw-bold" >
+                            <td>
+                                簽署情況
+                                <BR>
+                                Signing Status
+                            </td>
+                            <td>
+                                簽署時間
+                                <BR>
+                                Signing Time
+                            </td>
+                            <td>
+                                簽署內容
+                                <BR>
+                                Content
+                            </td>
+                        </tr>
+                        <tr>
+                            
+
+                            <td class="text-center text-success h5" >
+                                閱讀了解並已告知法定代理人或監護人<br>I have read, understood, and informed my statutory agent or guardian of the statement
+                            </td>
+
+                            
+                                <td class="text-center h6" >
+                                    2022/8/22 下午 12:08:11
+                                </td>
+                                <td class="text-center h6 " >
+                                    <a href='wap_001500_authority.asp?authority_no=B021070801' >2018 B02【Ⅰ】 </a>
+                                </td>
+                            
+                        </tr>
+                    </table>
                 </div>
+            
+            <hr style="height:2px ;"  color="#EF5F61" >
+            
 
 
-
-
-
-            </div>
-        </div>
-
-        	
 
     </body>
 </html>
